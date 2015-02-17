@@ -64,16 +64,5 @@ int main()
 	execTime = endTime - startTime;
 
 	printf("Execution time is %2.3f seconds\n", execTime);
-	/*
-	for(int i = 0; i < M * M; i++)
-	{
-		printf("%f\t", C[i]);
-
-		if((i + 1) % M == 0)
-		{
-			printf("\n");
-		}
-	}
-	*/
 	return 0;
 }
