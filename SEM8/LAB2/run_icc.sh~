@@ -1,0 +1,3 @@
+#!/bin/bash
+icc -std=c99 -opt-report=4 -qopt-report-phase=vec -D NOALIAS -D ALIGNED -ipo main.c -o icc_vec
+icc -std=c99 -O1 main.c -o icc_unvec
