@@ -11,9 +11,6 @@ int main()
 	double execTime;
 	double startTime, endTime;
 
-	//float *A = (float*)malloc(N * N * sizeof(float));
-	//float *B = (float*)malloc(N * N * sizeof(float));
-	//float *C = (float*)malloc(N * N * sizeof(float));
 	float A[N * N]__attribute__((aligned(16)));
 	float B[N * N]__attribute__((aligned(16)));
 	float C[N * N]__attribute__((aligned(16)));
@@ -70,17 +67,5 @@ int main()
 	execTime = endTime - startTime;
 
 	printf("Execution time is %2.3f seconds\n", execTime);
-
-	/*
-	for(int i = 0; i < N * N; i++)
-	{
-		printf("%f\t", C[i]);
-
-		if((i + 1) % N == 0)
-		{
-			printf("\n");
-		}
-	}
-	*/
 	return 0;
 }
